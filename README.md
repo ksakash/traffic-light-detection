@@ -21,7 +21,7 @@ Next major thing was to think of some of ways to reduce the model size even furt
 
 All the methods aim to reduce the size of network quite significantly without reducing accuracy. Besides there are a couple of other simple techniques like dropout which can decrease the size of the network.
 
-On top it we can apply another approach explained in this [paper]() which can reduce the size even further. In this paper, the authors outline 3 main strategies for reducing parameter size while maximizing accuracy.
+On top it we can apply another approach explained in this [paper](https://arxiv.org/abs/1602.07360) which can reduce the size even further. In this paper, the authors outline 3 main strategies for reducing parameter size while maximizing accuracy.
 
 1. Make the network smaller by replacing 3x3 filters with 1x1 filters
 2. Reduce the number of inputs for the remaining 3x3 filters
@@ -34,7 +34,7 @@ Further we can convert the trained model through [tensorflow lite](https://www.t
 ## Work Done
 
 My first step was to get familiarized with a Deep Learning Framework. I chose tensorflow, as suggested by the mentors. So, 
-I did all the tutorials as fast as I could. Then I checked out the [object detection apis](https://github.com/tensorflow/models/tree/master/research/object_detection/meta_architectures) provided by tensorflow dedicated to the construction of meta-achitectures like SSD, R-FCN and Faster RCNN. I also went through tutorials on how to [save and restore models through tensorflow].
+I did all the tutorials as fast as I could. Then I checked out the [object detection apis](https://github.com/tensorflow/models/tree/master/research/object_detection/meta_architectures) provided by tensorflow dedicated to the construction of meta-achitectures like SSD, R-FCN and Faster RCNN. I also went through tutorials on how to [save and restore models through tensorflow](https://www.tensorflow.org/tutorials/keras/save_and_restore_models).
 
 I went through a lot of research papers, blogs, tutorials, etc. to come to a plane to implement which I have described above.
 Though tensorflow is one of the most efficient framework for Deep Learning, still it can be sometimes very hard to figure out how to work things out. So, for some specific things I chose to keras, a deep learning library which uses tensorflow in backend.  
